@@ -1,0 +1,39 @@
+version: '3.8'
+services:
+  nest-api:
+    build:
+      context: .
+      dockerfile: docker/nestjs/Dockerfile
+    container_name: nest-api 
+    restart: always
+    ports:
+      - 3000:3000
+      - 5555:5555
+    depends_on:
+      - postgres
+    env_file:
+      - .env
+    command: >
+      sh -c "npx prisma generate &&
+             npx prisma studio &
+             npm run start:dev"
+
+    volumes:
+      - .:/app  # Mount the src directory for live updates
+
+
+
+  postgres:
+    image: postgres:13
+    container_name: postgresprisma
+    restart: always
+    ports:
+      - 5432:5432
+    env_file:
+      - .env
+    volumes:
+      - postgres:/var/lib/postgresql/data
+
+volumes:
+  postgres:
+    name: nest-prisma-docker-db

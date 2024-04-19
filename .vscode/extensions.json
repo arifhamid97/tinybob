@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "prisma.prisma",
+        "imgildev.vscode-nestjs-prisma-snippets",
+        "imgildev.vscode-nestjs-snippets-extension",
+        "ms-azuretools.vscode-docker"
+    ]
+}
