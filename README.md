@@ -24,7 +24,31 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+<span style="color:red">**Tiny Bob**</span> is a meticulously crafted Nest.js application, demonstrating real-world scenarios with an intricate architecture. It showcases:
+- <span style="color:red">**Authentication:**</span> Secure user authentication with JWT and OAuth.
+- <span style="color:red">**Database Integration:**</span> Seamless interaction with various databases and ORMs.
+- <span style="color:red">**APIs:**</span> Flexible RESTful APIs and GraphQL endpoints.
+- <span style="color:red">**Validation and Error Handling:**</span> Ensured data integrity and user-friendly error responses.
+- <span style="color:red">**Caching and Rate Limiting:**</span> Optimized performance and resource utilization.
+- <span style="color:red">**Real-time Communication:**</span> WebSockets for live chat and notifications.
+- <span style="color:red">**File Uploads and Storage:**</span> Support for secure file uploads and cloud storage.
+- <span style="color:red">**Testing:**</span> Comprehensive testing strategies for reliability.
+- <span style="color:red">**Documentation:**</span> Detailed code and API documentation for easy understanding.
+- <span style="color:red">**Deployment and CI/CD:**</span> Automated deployment pipelines and monitoring solutions.
+<span style="color:red">**Tiny Bob**</span> is an inspiration for developers, emphasizing scalability, security, and maintainability.
+
+
+
+## Todo
+  | Description  | Complexity | Status  |
+  |--------------|------------|---------|
+  | Keycloak Auth and Authorization    |  💀       | ✅ Done|
+  | Pipe| 😎     | ✅ Done|
+  | Guard       | 😎        | ⏳ In Progress |
+  | Bull       | 😎        | ❌ Not Completed |
+
+  
+
 
 ## Installation
 
