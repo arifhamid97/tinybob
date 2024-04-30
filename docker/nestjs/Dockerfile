@@ -10,6 +10,8 @@ WORKDIR /app
 # # Install app dependencies
 # RUN npm install
 
+# Mount all app dir to container dir for development only
+
 COPY . .
 
 EXPOSE 3000 5555
